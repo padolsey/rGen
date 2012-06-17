@@ -37,8 +37,6 @@ tests.forEach(function(regex) {
 	});
 });
 
-throw 2;
-
 // ==== ABSOLUTE/FIXED TESTS ====
 
 // Force e.g. [a-z] -> a, and [0-9] -> 0 (random is ALWAYS zero)
