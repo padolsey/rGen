@@ -22,6 +22,8 @@ rGen(/c[ao][tr]/)
 //  => "cor"
 ```
 
+*Note: rGen assumes that you really mean `^(?:___)$`, otherwise `rGen(/x/)` would have to produce any random string that contains `x` and I'm not sure that's very useful...*
+
 ### Currently supporting:
 
  * Character classes plus ranges (e.g. `[a-z_]`)
