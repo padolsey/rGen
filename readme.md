@@ -41,4 +41,4 @@ rGen(/c[ao][tr]/)
 ### Other TODOs
 
  * Use headless PhantomJS w/ grunt to test in node
- * Make it an NPM module!!
+ * Add it to npm?
