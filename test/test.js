@@ -16,6 +16,8 @@ var tests = [
 	/^(\w\d\w\d\S\s\D)$/,
 	/^([\w]{2,5})$/,
 	/^(\\a\\b)$/,
+	/^.....$/,
+	/^....(.(.)).+?$/,
 	/^(a+?b+?c)$/,
 	/^([a-z0-9]-[a-z0-9])$/i,
 	/^(a|b|c|d)$/,
@@ -32,7 +34,7 @@ tests.forEach(function(regex) {
 		for (var l = 10; l--;) {
 			// Run 10 times to be sure
 			var str = rGen(regex);
-			ok(regex.test(str), str + ' passes ' + regex);
+			ok(regex.test(str), '"' + str + '" passes ' + regex);
 		}
 	});
 });

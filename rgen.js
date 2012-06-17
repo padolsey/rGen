@@ -166,6 +166,11 @@ var rGen = (function() {
               i += m[0].length;
             }
             break;
+          case '.' :
+            group.sacks.push(
+              ALPHA + ALPHA_UPPER + NUMERIC + PUNCTUATION + UNDERSCORE
+            );
+            break;
           case '?' :
             if (Math.random() > .5) {
               group.sacks.pop();
